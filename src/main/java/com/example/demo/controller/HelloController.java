@@ -18,7 +18,7 @@ public class HelloController {
         return "Hello World!";
     }
 
-    @GetMapping("/greet/{name}")
+    @GetMapping("/greet/{name}")	
     public Greeting greet(@PathVariable String name) {
         return helloService.createGreeting(name);
     }
